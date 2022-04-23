@@ -45,7 +45,9 @@ function EmailVerification() {
           return res.json();
         } else {
           return res.json().then((data) => {
+            console.log(data);
             let errorMessage = `${data.message}`;
+            console.log(errorMessage);
             throw new Error(errorMessage);
           });
         }
@@ -55,6 +57,8 @@ function EmailVerification() {
         history.replace("/welcome");
       })
       .catch((err) => {
+        console.log(err);
+        console.log(err.message);
         alert(err);
       });
   };
