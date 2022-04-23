@@ -156,7 +156,7 @@ function Signup() {
           <p className={classes.optionsHeading}>Already have an Account?</p>
           <p className={classes.optionsText}>
             <span onClick={() => history.push("/login")}>Click here</span> to
-            reset your password
+            Login into your account
           </p>
         </div>
       </form>
