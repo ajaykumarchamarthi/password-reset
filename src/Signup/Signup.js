@@ -34,7 +34,7 @@ function Signup() {
     const password = data.password;
     const confirmPassword = data.confirmPassword;
 
-    fetch("http://localhost:4000/api/v1/users/signup", {
+    fetch("https://loginresetflow-backend.herokuapp.com/api/v1/users/signup", {
       method: "POST",
       headers: {
         "content-Type": "application/json",

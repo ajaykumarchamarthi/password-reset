@@ -34,13 +34,16 @@ function ResetPassword() {
 
     const token = params.token;
 
-    fetch(`http://localhost:4000/api/v1/users/resetPassword/${token}`, {
-      method: "PATCH",
-      body: JSON.stringify({ password, passwordConfirm }),
-      headers: {
-        "content-Type": "application/json",
-      },
-    })
+    fetch(
+      `https://loginresetflow-backend.herokuapp.com/api/v1/users/resetPassword/${token}`,
+      {
+        method: "PATCH",
+        body: JSON.stringify({ password, passwordConfirm }),
+        headers: {
+          "content-Type": "application/json",
+        },
+      }
+    )
       .then((response) => {
         if (response.ok) {
           return response.json();

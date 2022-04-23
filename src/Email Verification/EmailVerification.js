@@ -29,7 +29,7 @@ function EmailVerification() {
     const password = data.password;
 
     fetch(
-      `http://localhost:4000/api/v1/users/emailVerifyLogin/${verificationToken}`,
+      `https://loginresetflow-backend.herokuapp.com/api/v1/users/emailVerifyLogin/${verificationToken}`,
       {
         method: "POST",
         body: JSON.stringify({ email, password }),

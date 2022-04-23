@@ -22,10 +22,10 @@ function App() {
           <Route path="/forgotpassword">
             <ForgotPassword />
           </Route>
-          <Route path="/resetpassword">
+          <Route path="/resetpassword/:token">
             <ResetPassword />
           </Route>
-          <Route path="/emailverification">
+          <Route path="/emailverification/:emailVerificationToken">
             <EmailVerification />
           </Route>
           <Route path="*">
