@@ -57,7 +57,7 @@ function ResetPassword() {
       .then((data) => {
         alert(data.status);
       })
-      .catch((err) => alert(err.message));
+      .catch((err) => alert(err));
   };
   return (
     <div className={classes.container}>

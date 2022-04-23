@@ -46,10 +46,10 @@ function Login() {
       })
       .then((data) => {
         alert(data.status);
-        history.push("/welcome");
+        history.replace("/welcome");
       })
       .catch((err) => {
-        alert(err.message);
+        alert(err);
       });
   };
 

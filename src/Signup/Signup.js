@@ -61,7 +61,7 @@ function Signup() {
         alert(data.status);
       })
       .catch((err) => {
-        alert(err.message);
+        alert(err);
       });
   };
 
