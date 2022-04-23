@@ -45,7 +45,7 @@ function Login() {
         }
       })
       .then((data) => {
-        alert(data.status);
+        alert(data.message);
       })
       .catch((err) => {
         alert(err.message);
@@ -85,7 +85,7 @@ function Login() {
           <p className={classes.error}>{errors.password?.message}</p>
         </div>
         <div className={classes.btn}>
-          <Button variant="contained">Signup</Button>
+          <Button variant="contained">Login</Button>
         </div>
         <hr className={classes.line} />
         <div className={classes.options}>

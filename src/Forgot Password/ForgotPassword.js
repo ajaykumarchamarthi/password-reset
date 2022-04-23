@@ -73,7 +73,7 @@ function ForgotPassword() {
         </div>
         <div className={classes.btn}>
           <Button variant="contained" type="submit">
-            Reset Password
+            Send Reset Email
           </Button>
         </div>
       </form>
