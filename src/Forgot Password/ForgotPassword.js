@@ -45,7 +45,7 @@ function ForgotPassword() {
       .then((data) => {
         alert(data.status);
       })
-      .catch((err) => alert(err));
+      .catch((err) => alert(err.message));
   };
 
   return (
