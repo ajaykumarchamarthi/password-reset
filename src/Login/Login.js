@@ -45,7 +45,8 @@ function Login() {
         }
       })
       .then((data) => {
-        alert(data.message);
+        alert(data.status);
+        history.push("/welcome");
       })
       .catch((err) => {
         alert(err.message);

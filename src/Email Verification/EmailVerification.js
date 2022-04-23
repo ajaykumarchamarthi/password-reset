@@ -5,6 +5,7 @@ import Button from "@mui/material/Button";
 import classes from "./EmailVerification.module.css";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { useHistory } from "react-router-dom";
 import * as yup from "yup";
 
 const schema = yup.object().shape({
@@ -13,6 +14,7 @@ const schema = yup.object().shape({
 });
 
 function EmailVerification() {
+  const history = useHistory();
   const params = useParams();
   const verificationToken = params.emailVerificationToken;
 
@@ -50,6 +52,7 @@ function EmailVerification() {
       })
       .then((data) => {
         alert(data.status);
+        history.push("/welcome");
       })
       .catch((err) => {
         alert(err.message);

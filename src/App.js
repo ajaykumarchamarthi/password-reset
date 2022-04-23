@@ -4,6 +4,7 @@ import Login from "./Login/Login";
 import ForgotPassword from "./Forgot Password/ForgotPassword";
 import ResetPassword from "./Reset Password/ResetPassword";
 import EmailVerification from "./Email Verification/EmailVerification";
+import Welcome from "./Welcome/Welcome";
 import { Switch, Route } from "react-router-dom";
 import Navbar from "./Navbar/Navbar";
 
@@ -27,6 +28,9 @@ function App() {
           </Route>
           <Route path="/emailverification/:emailVerificationToken">
             <EmailVerification />
+          </Route>
+          <Route path="/welcome">
+            <Welcome />
           </Route>
           <Route path="*">
             <Signup />
