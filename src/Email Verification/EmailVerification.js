@@ -96,7 +96,9 @@ function EmailVerification() {
           <p className={classes.error}>{errors.password?.message}</p>
         </div>
         <div className={classes.btn}>
-          <Button variant="contained">Login</Button>
+          <Button variant="contained" type="submit">
+            Login
+          </Button>
         </div>
       </form>
     </div>
